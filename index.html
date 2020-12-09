@@ -25,9 +25,9 @@
                                  
                      <td style="background-color: tan; font-size: 35px; border-radius: 10px;"><a href= "#Mode Spawns">Mode Spawns</a></td>
                   
-                     <td style="background-color: yellowgreen; font-size: 35px; border-radius: 10px;">Jutsu Scroll Spawns (Placeholder)</td>
+                     <td style="background-color: yellowgreen; font-size: 35px; border-radius: 10px;">Jutsu Scroll Spawns (Coming Soon)</td>
             
-                    <td style="background-color: rgb(187, 86, 86); font-size: 35px; border-radius: 10px;">Genkei Rarities (Placeholder)</td>
+                    <td style="background-color: rgb(187, 86, 86); font-size: 35px; border-radius: 10px;">Genkei Rarities (Coming Soon)</td>
                 </tr>
              </tbody>
          </table>
@@ -42,8 +42,44 @@
                     var m = date.getMinutes();
                     var s = date.getSeconds();
                     var session = "AM";
-                    var alarmSound = new Audio();
-                    alarmSound.src = "https://docs.google.com/uc?export=download&id=1ypoVMzbPbbiSJ9zs7B1mVVN9ETO0hYMP";
+
+                    //sound variables ------------------------
+
+                    var testSound = new Audio();
+                    testSound.src = "https://docs.google.com/uc?export=download&id=1hWqjxh1uICnic0WQSFBW10ZFwQi3xfZ7"
+
+                    var kuramaSound = new Audio();
+                    kuramaSound.src = "https://docs.google.com/uc?export=download&id=1kt-oYaQ7aUn2boiYxXW0hTr5O6fJKrFK";
+
+                    var shukakuSound = new Audio();
+                    shukakuSound.src = "https://docs.google.com/uc?export=download&id=1SphHP5IUKE8RpKl5sg31S06B-Hup2Rov";
+
+                    var chomeiSound = new Audio;
+                    chomeiSound.src = "https://docs.google.com/uc?export=download&id=1a7pmXos-QmLZ8_LuJND-SbJ5JMpDf5_a";
+
+                    var matatabiSound = new Audio();
+                    matatabiSound.src = "https://docs.google.com/uc?export=download&id=1ypoVMzbPbbiSJ9zs7B1mVVN9ETO0hYMP";
+
+                    var gyukiSound = new Audio();
+                    gyukiSound.src = "https://docs.google.com/uc?export=download&id=16ddg_hnfHvaM5nUP42E-Gdfgitb2dPey";
+
+                    var isobuSound = new Audio();
+                    isobuSound.src = "https://docs.google.com/uc?export=download&id=14n_YF5uJdmFrXFPrb2YdaSefr1ta2O3s";
+
+                    var seikenSound = new Audio();
+                    seikenSound.src = "https://docs.google.com/uc?export=download&id=18BwczbP8ZVTxzydybVMm-6FPC6cPkcQ_";
+
+                    var songokuSound = new Audio();
+                    songokuSound.src = "https://docs.google.com/uc?export=download&id=1oerAaiMRZO65NuRF78Uku_kyd9afvDmM";
+
+                    var kokuoSound = new Audio();
+                    kokuoSound.src = "https://docs.google.com/uc?export=download&id=1BQhWYlhD7KSxHLqnU0dXCoPKrl_8VFnu";
+
+
+
+
+
+                    // sound variables
 
 
                     if (h==0) {
@@ -57,10 +93,54 @@
                     }
 
 
-                    //ALERT NOTIFICATIONS --------------------------------------
-                    if ((h == 1) && (m == 55) && (s == 59)){
-                        alarmSound.play();
+                    // ALERTS -------------------------
+
+                    if ((h == 3) && (m == 58) && (s ==0)) {
+                        testSound.play();
                     }
+
+                    if ((h == 6) && (m== 5) && ( s == 0)) {
+                        kuramaSound.play();
+                    }
+
+                    if ((h == 6) && (m== 45) && (s == 0)) {
+                        shukakuSound.play()
+                    }
+                    if ((h == 7) && (m == 5) && (s == 0)) {
+                        chomeiSound.play();
+                    }
+                    
+                    if ((h == 8) && (m == 5) && (s == 0)){
+                        matatabiSound.play();
+                    }
+
+                    if ((h == 8) && (m == 20) && (s== 0)){
+                        gyukiSound.play()
+                    }
+                    if ((h == 9) && (m == 40) && (s== 0)){
+                        isobuSound.play();                   
+                    }
+
+                    if ((h == 10) && (m == 5) && (s== 0)){
+                        seikenSound.play();                   
+                    }
+
+                    if ((h == 11) && (m == 25) && (s== 0)){
+                        songokuSound.play();                 
+                    }
+
+                    if ((h == 11) && (m == 40) && (s== 0)){
+                        kokuoSound.play();
+                    }
+
+
+
+
+
+
+
+                    // ALERTS --------------------------------
+
 
                     if (h < 10) {
                          h = "0" + h;
@@ -730,7 +810,115 @@
                 <td>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/JoKCxDB6YGo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </td>
-            </tr>                                       
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Snake Sage
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Stone (Obelisk)</td>
+                <td style="font-size: 20px;">2:35 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/amXAheb0WEg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Demon Hunter
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Mist (Haze)</td>
+                <td style="font-size: 20px;">2:45 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/okuKNb6W7Vk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Hundred Seals
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Training Grounds</td>
+                <td style="font-size: 20px;">2:45 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lIC8-FlTXGw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Toad Sage
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Leaf (Ember)</td>
+                <td style="font-size: 20px;">2:45 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/P84SzPUKc_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        8 Inner Gates
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Leaf (Ember)</td>
+                <td style="font-size: 20px;">3:30 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QkYp55bJsJA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Slug Sage
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Stone (Obelisk)</td>
+                <td style="font-size: 20px;">5:20 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-nzGp7QV17w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Weapon Specialist
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Leaf (Ember)</td>
+                <td style="font-size: 20px;">5:35 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uj3CCCVzKO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        7 Heavenly Breaths
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Sand (Dunes)</td>
+                <td style="font-size: 20px;">6:45 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IxaO7Hzj2iY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Cloak of Lightning
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Cloud (Nimbus)</td>
+                <td style="font-size: 20px;">7:35 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/p6whoG6N_To" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>                                           
         </tbody>
     </table>
         <footer>
