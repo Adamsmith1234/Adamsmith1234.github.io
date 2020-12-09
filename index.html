@@ -21,9 +21,9 @@
                  <tr>
                      <td style="background-color: paleturquoise; font-size: 35px; border-radius: 10px;"><a href="#Tailed Beasts"> Tailed Beast Spawns</a></td>
                                  
-                     <td style="background-color: plum; font-size: 35px; border-radius: 10px;"><a href="#Ninja Tools">Ninja Tool Spawns </a></td>
+                     <td style="background-color: plum; font-size: 35px; border-radius: 10px;"><a href="#Ninja Tools">Ninja Tool Spawns</a></td>
                                  
-                     <td style="background-color: tan; font-size: 35px; border-radius: 10px;">Mode Spawns (Placeholder)</td>
+                     <td style="background-color: tan; font-size: 35px; border-radius: 10px;"><a href= "#Mode Spawns">Mode Spawns</a></td>
                   
                      <td style="background-color: yellowgreen; font-size: 35px; border-radius: 10px;">Jutsu Scroll Spawns (Placeholder)</td>
             
@@ -32,30 +32,46 @@
              </tbody>
          </table>
          <h2 style = "color: white; font-family: fantasy;">Current Time</h2>
-                 <div id="time" style="font-size: 50px; color: white; font-family: fantasy;"> 
-        <script>
-                function updateClock() {
+            <div id="clockDisplay" style="font-size: 50px; color: white; font-family: fantasy;"> 
+                <script type="text/javascript">
 
-                    var now = new Date(), // current date
-                        months = ['January', 'February', '...']; // you get the idea
-                        time = now.getHours() + ':' + now.getMinutes(), // again, you get the idea
+                function showTime () {
+                    var date = new Date()
+                    var h = date.getHours();
+                    var m = date.getMinutes();
+                    var s = date.getSeconds();
+                    var session = "AM"
 
-                        // a cleaner way than string concatenation
-                        date = [now.getDate(), 
-                                months[now.getMonth()],
-                                now.getFullYear()].join(' ');
-                        
+                    if (h==0) {
+                        h= 12
+                    }
+                    if (h > 12) {
+                        h = h-12;
+                        session = "PM";
+                    }
 
-                    // set the content of the element with the ID time to the formatted string
-                    document.getElementById('time').innerHTML = time;
+                    if (h < 10) {
+                         h = 0 + h;
+                    }
 
-                    // call this function again in 1000ms
-                    setTimeout(updateClock, 1000);
+                    if (m < 10) {
+                        m = "0" + m;
+                    }
+
+                    if (s < 10) {
+                        s = "0" + s;
+                    }
+
+                    var time = h + ":" + m + ":" + s + " " + session;
+                    document.getElementById("clockDisplay").innerText = time;
+                    document.getElementById("clockDisplay").textContent = time;
+
+                    setTimeout(showTime, 1000)
                 }
-                updateClock(); // initial call
-            
-         
-        </script>
+
+                showTime();
+
+                </script>
    
         </header>
 
@@ -677,12 +693,35 @@
 
             </tbody>
         </table>
+
+        <!---------------------------------------------->
+        <table id="Mode Spawns" style="border-radius: 10px; border-style: solid; border-color: white ;border-width: thick ; font-family: fantasy ;">
+            <thead>
+                <tr style= "color: white; background-color: rgba(172, 172, 172, 0.541); font-size: 30px;">
+                    <th style="text-align: left; width: 300px;" ><h2>Mode </h2></th>
+                    <th style="text-align: left; width: 300px;"><h2>Village  </h2></th>
+                    <th style= "text-align: left;width: 300px;"><h2>Spawn Time </h2></th>
+                    <th style= "text-align: left;width: 300px;"><h2>Location </h2></th>
+                </tr>
+            </thead>
+        <tbody style="background-color: tan;">
+            <tr>
+                <td>
+                    <div style="font-size: 25px;">
+                        Curse Mark
+                    </div>
+                  </td>
+                <td style="font-size: 20px;">Forest of Death</td>
+                <td style="font-size: 20px;">2:15 AM/PM</td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JoKCxDB6YGo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>                                       
+        </tbody>
+    </table>
         <footer>
             <h2 style = "color: white; font-family: fantasy;"> More Content Coming Soon!</h2>
             <p style = "color: white; font-family: fantasy;"> Contact: adamjsmith002@gmail.com</p>
-
-
-
         </footer>
 
      </body>
