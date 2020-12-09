@@ -31,27 +31,39 @@
                 </tr>
              </tbody>
          </table>
-         <h2 style = "color: white; font-family: fantasy;">Current Time</h2>
+         <h2> <button type ="button" style="color: black; font-size: 25px;font-family: fantasy; border-style:dotted; background-color: white;">Activate Shindo-Alert</button></h2>
             <div id="clockDisplay" style="font-size: 50px; color: white; font-family: fantasy;"> 
                 <script type="text/javascript">
+
 
                 function showTime () {
                     var date = new Date()
                     var h = date.getHours();
                     var m = date.getMinutes();
                     var s = date.getSeconds();
-                    var session = "AM"
+                    var session = "AM";
+                    var alarmSound = new Audio();
+                    alarmSound.src = "https://docs.google.com/uc?export=download&id=1ypoVMzbPbbiSJ9zs7B1mVVN9ETO0hYMP";
+
 
                     if (h==0) {
                         h= 12
                     }
+                    if (h >= 12) {
+                        session = "PM";
+                    }
                     if (h > 12) {
                         h = h-12;
-                        session = "PM";
+                    }
+
+
+                    //ALERT NOTIFICATIONS --------------------------------------
+                    if ((h == 1) && (m == 55) && (s == 59)){
+                        alarmSound.play();
                     }
 
                     if (h < 10) {
-                         h = 0 + h;
+                         h = "0" + h;
                     }
 
                     if (m < 10) {
@@ -61,6 +73,8 @@
                     if (s < 10) {
                         s = "0" + s;
                     }
+
+
 
                     var time = h + ":" + m + ":" + s + " " + session;
                     document.getElementById("clockDisplay").innerText = time;
